@@ -1,0 +1,1888 @@
+<!doctype html>
+<html lang="zxx">
+
+
+<!-- Mirrored from miller.bslthemes.com/arter-demo/onepage.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Feb 2025 05:46:51 GMT -->
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- color of address bar in mobile browser -->
+  <meta name="theme-color" content="#2B2B35">
+  <!-- favicon  -->
+  <link rel="shortcut icon" href="img/face-1.jpg" type="image/x-icon">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="css/plugins/bootstrap.min.css">
+  <!-- font awesome css -->
+  <link rel="stylesheet" href="css/plugins/font-awesome.min.css">
+  <!-- swiper css -->
+  <link rel="stylesheet" href="css/plugins/swiper.min.css">
+  <!-- fancybox css -->
+  <link rel="stylesheet" href="css/plugins/fancybox.min.css">
+  <!-- main css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- AOS CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+  
+  <title>Protfolio</title>
+ 
+
+  <style>
+    /* Modal Styles */
+.modal-overlay {
+  display: none; /* Show with JS by changing to 'block' */
+  position: fixed;
+  z-index: 9999; /* High z-index to overlap everything */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1000%;
+  background-color: rgba(0, 0, 0, 0.6); /* Dark background overlay */
+}
+
+.modal-box {
+  position: fixed;
+  top: 72%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centered both ways */
+  background: #37373785;
+  max-width: 800px;
+  width: 90%;
+  padding: 30px;
+  border-radius: 10px;
+  z-index: 10000; /* Even higher to stay above modal-overlay if needed */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3); /* Visual depth */
+}
+
+
+.close-btn {
+  position: absolute;
+  top: 15px; right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.certificates {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.doc-box {
+  flex: 1 1 45%;
+  text-align: center;
+}
+
+.doc-img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Container and Layout */
+.internship-showcase {
+  padding: 80px 0;
+  background-color: #00000000;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.internship-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Image */
+.internship-image img {
+  width: 80%;
+  max-width: 100px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Details */
+.internship-details {
+  flex: 1;
+}
+
+.internship-details h3 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.internship-details h5 {
+  font-size: 22px;
+  margin-bottom: 16px;
+  color: #dab616;
+}
+
+.internship-details p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.internship-details ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 25px;
+}
+
+.internship-details ul li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+/* Button */
+.internship-btn {
+  display: inline-block;
+  background-color: #b79f33;
+  color: #040202;
+  padding: 10px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.internship-btn:hover {
+  background-color: #c83233;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .internship-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .internship-image img {
+    max-width: 100%;
+  }
+}
+
+   
+.art-popup {
+  background-color: #464545; /* light grey */
+  padding: 20px;
+  border-radius: 10px;
+  color: #ffffff;
+  max-width: 600px;
+}
+.art-popup h4 {
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+    .art-hover-float {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      will-change: transform;
+      cursor: pointer;
+      position: relative;
+      z-index: 1;
+    }
+  
+    .art-hover-float:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+    }
+  
+    /* Optional: Prevent clipping */
+    .art-scroll-frame,
+    .container-fluid,
+    .row {
+      overflow: visible !important;
+    }
+  </style>
+
+
+
+  
+</head>
+
+<body>
+  
+
+  <!-- app -->
+  <div class="art-app art-app-onepage">
+
+    <!-- mobile top bar -->
+    <div class="art-mobile-top-bar"></div>
+
+    <!-- app wrapper -->
+    <div class="art-app-wrapper">
+
+      <!-- app container end -->
+      <div class="art-app-container">
+
+        <!-- info bar -->
+        <div class="art-info-bar">
+
+          <!-- menu bar frame -->
+          <div class="art-info-bar-frame">
+
+            <!-- info bar header -->
+            <div class="art-info-bar-header">
+              <!-- info bar button -->
+              <div class="art-info-bar-btn">
+                <!-- icon -->
+                <i class="fas fa-ellipsis-v"></i>
+              </div>
+              <!-- info bar button end -->
+            </div>
+            <!-- info bar header end -->
+
+            <!-- info bar header -->
+            <div class="art-header">
+              <!-- avatar -->
+              <div class="art-avatar">
+                <a data-fancybox="avatar" data-no-swup href="img/face-1.jpg" class="art-avatar-curtain">
+                  <img src="img/face-1.jpg" alt="avatar">
+                  <i class="fas fa-expand"></i>
+                </a>
+                <!-- available -->
+                <div class="art-lamp-light">
+                  <!-- add class 'art-not-available' if not available-->
+                  <div class="art-available-lamp"></div>
+                </div>
+              </div>
+              <!-- avatar end -->
+              <!-- name -->
+              <h5 class="art-name mb-10">Manoj v</h5>
+              <!-- post -->
+              <div class="art-sm-text">Full-stack Developer <br>Email : manoj.v2005@gmail.com </div>
+            </div>
+            <!-- info bar header end -->
+
+            <!-- scroll frame -->
+            <div id="scrollbar2" class="art-scroll-frame">
+
+              <!-- info bar about -->
+              <div class="art-table p-15-15">
+                <!-- about text -->
+                <ul>
+                  <!-- country -->
+                  <li>
+                    <h6>Ph.NO :</h6><span>+91 9361154514</span>
+                  </li>
+                  <!-- city -->
+                  <li>
+                    <h6>Location:</h6><span>chennai,Tamil Nadu</span>
+                  </li>
+                  <!-- age -->
+                  <li>
+                    <h6>DOB:</h6><span>24/02/2005</span>
+                  </li>
+                </ul>
+
+                <div class="text-center my-3">
+  <a href="https://www.linkedin.com/in/your-profile-link" target="_blank"
+     class="btn btn-primary btn-sm d-inline-flex align-items-center"
+     style="background-color: #0496ff; border-color: #0077b5; margin: 5px auto;">
+    <i class="fab fa-linkedin me-1"></i> -Connect
+  </a>
+</div>
+
+
+
+
+
+
+
+              </div>
+              <!-- info bar about end -->
+
+              <!-- divider -->
+              <div class="art-ls-divider"></div>
+
+              <!-- language skills -->
+              <div class="art-lang-skills p-30-15">
+
+                <!-- skill -->
+                <div class="art-lang-skills-item">
+                  <div id="circleprog1" class="art-cirkle-progress"></div>
+                  <!-- title -->
+                  <h6>Tamil</h6>
+                </div>
+                <!-- skill end -->
+
+                <!-- skill -->
+                <div class="art-lang-skills-item">
+                  <div id="circleprog2" class="art-cirkle-progress"></div>
+                  <!-- title -->
+                  <h6>English</h6>
+                </div>
+                <!-- skill end -->
+
+                <!-- skill -->
+                 <div class="art-lang-skills-item">
+                  <div id="circleprog3" class="art-cirkle-progress"></div>
+                  <!-- title -->
+                  <h6>Coding</h6>
+                </div>
+
+
+                
+                
+                  
+                <!-- skill end -->
+
+              </div>
+              <!-- language skills end -->
+
+              <!-- divider -->
+              <div class="art-ls-divider"></div>
+
+              <!-- hard skills -->
+              <div class="art-hard-skills p-30-15">
+
+                <!-- skill -->
+                <div class="art-hard-skills-item">
+                  <div class="art-skill-heading">
+                    <!-- title -->
+                    <h6>HTML</h6>
+                  </div>
+                  <!-- progressbar frame -->
+                  <div class="art-line-progress">
+                    <!-- progressbar -->
+                    <div id="lineprog1"></div>
+                  </div>
+                  <!-- progressbar frame end -->
+                </div>
+                <!-- skill end -->
+
+                <!-- skill -->
+                <div class="art-hard-skills-item">
+                  <div class="art-skill-heading">
+                    <!-- title -->
+                    <h6>CSS</h6>
+                  </div>
+                  <!-- progressbar frame -->
+                  <div class="art-line-progress">
+                    <!-- progressbar -->
+                    <div id="lineprog2"></div>
+                  </div>
+                  <!-- progressbar frame end -->
+                </div>
+                <!-- skill end -->
+
+                <!-- skill -->
+                <div class="art-hard-skills-item">
+                  <div class="art-skill-heading">
+                    <!-- title -->
+                    <h6>Js</h6>
+                  </div>
+                  <!-- progressbar frame -->
+                  <div class="art-line-progress">
+                    <!-- progressbar -->
+                    <div id="lineprog3"></div>
+                  </div>
+                  <!-- progressbar frame end -->
+                </div>
+                <!-- skill end -->
+
+                <!-- skill -->
+                <div class="art-hard-skills-item">
+                  <div class="art-skill-heading">
+                    <!-- title -->
+                    <h6>java</h6>
+                  </div>
+                  <!-- progressbar frame -->
+                  <div class="art-line-progress">
+                    <!-- progressbar -->
+                    <div id="lineprog4"></div>
+                  </div>
+                  <!-- progressbar frame end -->
+                </div>
+
+                
+
+                <!-- skill end -->
+
+                <!-- skill -->
+                <div class="art-hard-skills-item">
+                  <div class="art-skill-heading">
+                    <!-- title -->
+                    <h6>Python</h6>
+                  </div>
+                  
+                  <!-- progressbar frame -->
+                  <div class="art-line-progress">
+                    <!-- progressbar -->
+                    <div id="lineprog5"></div>
+                  </div>
+                  <!-- progressbar frame end -->
+                </div>
+
+                <div class="art-hard-skills-item">
+                  <div class="art-skill-heading">
+                    <!-- title -->
+                    <h6>Mysql</h6>
+                  </div>
+                  
+                  <!-- progressbar frame -->
+                  <div class="art-line-progress">
+                    <!-- progressbar -->
+                    <div id="lineprog6"></div>
+                  </div>
+                  <!-- progressbar frame end -->
+                </div>
+
+                <div class="art-hard-skills-item">
+                  <div class="art-skill-heading">
+                    <!-- title -->
+                    <h6>MongoDB</h6>
+                  </div>
+                  
+                  <!-- progressbar frame -->
+                  <div class="art-line-progress">
+                    <!-- progressbar -->
+                    <div id="lineprog7"></div>
+                  </div>
+                  <!-- progressbar frame end -->
+                </div>
+                <!-- skill end -->
+
+              </div>
+              <!-- language skills end -->
+
+              <!-- divider -->
+              <div class="art-ls-divider"></div>
+              
+              <h5> Fameworks and libraries</h5>
+
+              <!-- knowledge list -->
+              <ul class="art-knowledge-list p-15-0">
+                <!-- list item -->
+                <li>Bootstrap,React</li>
+                <!-- list item -->
+                <li>Sring boot,J2EE,ORM</li>
+                <!-- list item -->
+                <li>Aws,Docker,CI & cd</li>
+                <!-- list item -->
+                <li>Figma,WordPress</li>
+              </ul>
+              <!-- knowledge list end -->
+
+              <!-- WhatsApp -->
+
+
+
+              <!-- divider -->
+              <div class="art-ls-divider"></div>
+
+              <!-- links frame -->
+              <div class="art-links-frame p-15-15">
+
+                <!-- download cv button -->
+                <a href="files/cv.txt" class="art-link" download data-no-swup>Download cv <i class="fas fa-download"></i></a>
+
+              </div>
+              <!-- links frame end -->
+
+            </div>
+            <!-- scroll frame end -->
+
+            <!-- sidebar social -->
+            <div class="art-ls-social">
+              <!-- social link -->
+              <a href="#" onclick="window.open('https://www.linkedin.com/in/manoj-v24', '_blank')">
+  <i class="fab fa-linkedin"></i>
+</a>
+
+              <!-- social link -->
+              <a href="#" onclick="window.open('https://wa.me/919361154514', '_blank')">
+  <i class="fab fa-whatsapp"></i>
+</a>
+<a href="#" onclick="window.location.href='tel:9361154514'">
+  <i class="fas fa-phone-alt"></i>
+</a>
+
+</a>
+
+              <!-- social link -->
+              
+              <!-- social link -->
+              <a href="#" onclick="window.open('https://github.com/manoj23798', '_blank')" >
+  <i class="fab fa-github"></i>
+</a>
+
+              <!-- social link -->
+               
+
+              
+            </div>
+            <!-- sidebar social end -->
+
+          </div>
+          <!-- menu bar frame end -->
+
+        </div>
+        <!-- info bar end -->
+
+        <!-- content -->
+        <div class="art-content">
+
+          <!-- curtain -->
+          <div class="art-curtain"></div>
+
+          <!-- top background -->
+          <div class="art-top-bg" style="background-image: url(img/bg.jpg)">
+            <!-- overlay -->
+            <div class="art-top-bg-overlay"></div>
+            <!-- overlay end -->
+          </div>
+          <!-- top background end -->
+
+          <!-- swup container -->
+          <div class="transition-fade" id="swup">
+
+            <!-- scroll frame -->
+            <div id="scrollbar" class="art-scroll-frame">
+
+              <!-- container -->
+              <div class="container-fluid">
+
+                <!-- row -->
+                <div class="row p-60-0 p-lg-30-0 p-md-15-0">
+                  <!-- col -->
+                  <div class="col-lg-12">
+
+                    <!-- banner -->
+                    <div class="art-a art-banner" style="background-image: url(img/bg.jpg)">
+                      <!-- banner back -->
+                      <div class="art-banner-back"></div>
+                      <!-- banner dec -->
+                      <div class="art-banner-dec"></div>
+                      <!-- banner overlay -->
+                      <div class="art-banner-overlay">
+                        <!-- main title -->
+                        <div class="art-banner-title">
+                          <!-- title -->
+                          <h1 class="mb-15">Discover my Amazing <br>Protfolio!</h1>
+                          <!-- suptitle -->
+                          <div class="art-lg-text art-code mb-25">&lt;<i>code</i>&gt; I  <span class="txt-rotate" data-period="2000"
+                              data-rotate='[
+      "build websites.",
+      "develop both frontend and backend.",
+      "design UI and UX.",
+      "can host and maintain websites.",
+      "can integrate with databases.",
+      "reply within an hour.",
+      "am available for both remote and on-site work."
+    ]'></span>&lt;/<i>code</i>&gt;</div>
+                          <div class="art-buttons-frame">
+                            <!-- button -->
+                            <a href="#." class="art-btn art-btn-md"><span>Explore now</span></a>
+                            <!-- button -->
+                            <a href="#." class="art-link art-white-link art-w-chevron">Hire me</a>
+                          </div>
+                        </div>
+                        <!-- main title end -->
+                        <!-- photo -->
+                        <img src="img/face-2.png" class="art-banner-photo" alt="Your Name">
+                      </div>
+                      <!-- banner overlay end -->
+                    </div>
+                    <!-- banner end -->
+
+                  </div>
+                  <!-- col end -->
+                </div>
+                <!-- row end -->
+
+              </div>
+              <!-- container end -->
+
+              <!-- container -->
+              <div class="container-fluid">
+
+                <!-- row -->
+                <div class="row p-30-0">
+
+                  <!-- col -->
+                  <div class="col-md-3 col-6">
+
+                    <!-- couner frame -->
+                    <div class="art-counter-frame">
+                      <!-- counter -->
+                      <div class="art-counter-box">
+                        <!-- counter number -->
+                        <span class="art-counter">10</span><span class="art-counter-plus">+</span>
+                      </div>
+                      <!-- counter end -->
+                      <!-- title -->
+                      <h6>Completed Certificate </h6>
+                    </div>
+                    <!-- couner frame end -->
+
+                  </div>
+                  <!-- col end -->
+
+                  <!-- col -->
+                  <div class="col-md-3 col-6">
+
+                    <!-- couner frame -->
+                    <div class="art-counter-frame">
+                      <!-- counter -->
+                      <div class="art-counter-box">
+                        <!-- counter number -->
+                        <span class="art-counter">3</span><span class="art-counter-plus">+</span>
+                      </div>
+                      <!-- counter end -->
+                      <!-- title -->
+                      <h6>Completed Projects</h6>
+                    </div>
+                    <!-- couner frame end -->
+
+                  </div>
+                  <!-- col end -->
+
+                  <!-- col -->
+                  <div class="col-md-3 col-6">
+
+                    <!-- couner frame -->
+                    <div class="art-counter-frame">
+                      <!-- counter -->
+                      <div class="art-counter-box">
+                        <!-- counter number -->
+                        <span class="art-counter">8</span><span class="art-counter-plus">+</span>
+                      </div>
+                      <!-- counter end -->
+                      <!-- title -->
+                      <h6>CO-circular Activity</h6>
+                    </div>
+                    <!-- couner frame end -->
+
+                  </div>
+                  <!-- col end -->
+
+                  <!-- col -->
+                  <div class="col-md-3 col-6">
+
+                    <!-- couner frame -->
+                    <div class="art-counter-frame">
+                      <!-- counter -->
+                      <div class="art-counter-box">
+                        <!-- counter number -->
+                        <span class="art-counter">18</span><span class="art-counter-plus">+</span>
+                      </div>
+                      <!-- counter end -->
+                      <!-- title -->
+                      <h6>Skills Exprience</h6>
+                    </div>
+                    <!-- couner frame end -->
+
+                  </div>
+                  <!-- col end -->
+
+                </div>
+                <!-- row end -->
+
+              </div>
+              
+              <!-- container end -->
+
+              <!-- container -->
+              <div class="container-fluid">
+
+                <!-- row -->
+                <div class="row">
+
+                  <!-- col -->
+                  <div class="col-lg-12">
+
+                    <!-- section title -->
+                    <div class="art-section-title">
+                      <!-- title frame -->
+                      <div class="art-title-frame">
+                        <!-- title -->
+                        <h4>My Exprience</h4>
+                      </div>
+                      <!-- title frame end -->
+                    </div>
+                    <!-- section title end -->
+
+                  </div>
+                  <!-- col end -->
+
+                  <!-- col -->
+                  <div class="col-lg-4 col-md-6">
+
+                    <!-- service -->
+                    <div class="art-a art-service-icon-box art-hover-float">
+
+                      <!-- service content -->
+                      <div class="art-service-ib-content">
+                        <!-- title -->
+                        <h5 class="mb-15">Web Development</h5>
+                        <!-- text -->
+                        <div class="mb-15">Experienced in creating responsive websites using HTML, CSS, JavaScript, Bootstrap, and React.js. Built dynamic user interfaces and real-time web applications during internships and projects.</div>
+                        <!-- button -->
+                        <div class="art-buttons-frame"><a href="#." class="art-link art-color-link art-w-chevron">Order now</a></div>
+                      </div>
+                      <!-- service content end -->
+                    </div>
+                    <!-- service end -->
+
+                  </div>
+                  <!-- col end -->
+
+                  <!-- col -->
+                  <div class="col-lg-4 col-md-6">
+
+                    <!-- service -->
+                    <div class="art-a art-service-icon-box art-hover-float">
+                      <!-- service content -->
+                      <div class="art-service-ib-content">
+                        <!-- title -->
+                        <h5 class="mb-15">UI/UX Design</h5>
+                        <!-- text -->
+                        <div class="mb-15">Skilled in creating clean and user-friendly designs using Figma and modern UI/UX principles. Focused on accessibility, layout balance, and visual storytelling for improved user experience.</div>
+                        <!-- button -->
+                        <div class="art-buttons-frame"><a href="#." class="art-link art-color-link art-w-chevron">Order now</a></div>
+                      </div>
+                      <!-- service content end -->
+                    </div>
+                    <!-- service end -->
+
+                  </div>
+                  <!-- col end -->
+
+                  <!-- col -->
+                  <div class="col-lg-4 col-md-6">
+
+                    <!-- service -->
+                    <div class="art-a art-service-icon-box art-hover-float">
+                      <!-- service content -->
+                      <div class="art-service-ib-content">
+                        <!-- title -->
+                        <h5 class="mb-15">Full-stack Development</h5>
+                        <!-- text -->
+                        <div class="mb-15">Built full-stack applications using React.js (frontend), Node.js and Java Spring Boot (backend), and MySQL/MongoDB for database. Worked on live client project with Renault Nissan during internship.</div>
+                        <!-- button -->
+                        <div class="art-buttons-frame"><a href="#." class="art-link art-color-link art-w-chevron">Order now</a></div>
+                      </div>
+                      <!-- service content end -->
+                    </div>
+                    <!-- service end -->
+
+                  </div>
+                  <!-- col end -->
+
+                  <!-- col -->
+                  <div class="col-lg-4 col-md-6">
+
+                    <!-- service -->
+                    <div class="art-a art-service-icon-box art-hover-float">
+                      <!-- service content -->
+                      <div class="art-service-ib-content">
+                        <!-- title -->
+                        <h5 class="mb-15">CI & CD AND HOSTING</h5>
+                        <!-- text -->
+                        <div class="mb-15">Knowledge of Docker, AWS, and CI/CD pipelines. Capable of deploying applications with automated build and release processes for faster development and delivery cycles.</div>
+                        <!-- button -->
+                        <div class="art-buttons-frame"><a href="#." class="art-link art-color-link art-w-chevron">Order now</a></div>
+                      </div>
+                      <!-- service content end -->
+                    </div>
+                    <!-- service end -->
+
+                  </div>
+                  <!-- col end -->
+
+                  <!-- col -->
+                  <div class="col-lg-4 col-md-6">
+
+                    <!-- service -->
+                    <div class="art-a art-service-icon-box art-hover-float">
+                      <!-- service content -->
+                      <div class="art-service-ib-content">
+                        <!-- title -->
+                        <h5 class="mb-15">Database</h5>
+                        <!-- text -->
+                        <div class="mb-15">Proficient in MySQL and MongoDB. Designed and managed databases for several projects including NFT marketplace, ensuring efficient data handling and fast queries.</div>
+                        <!-- button -->
+                        <div class="art-buttons-frame"><a href="#." class="art-link art-color-link art-w-chevron">Order now</a></div>
+                      </div>
+                      <!-- service content end -->
+                    </div>
+                    <!-- service end -->
+
+                  </div>
+                  <!-- col end -->
+
+                </div>
+                <!-- row end -->
+
+              </div>
+              <!-- container end -->
+
+
+
+
+             
+
+
+
+
+              
+
+              <!-- container -->
+              <div class="container-fluid">
+
+                <!-- row -->
+                <div class="row">
+
+                  <!-- col -->
+                  <div class="col-lg-12">
+
+                    <!-- section title -->
+                    <div class="art-section-title">
+                      <!-- title frame -->
+                      <div class="art-title-frame">
+                        <!-- title -->
+                        <h4>CO-CIRCULAR ACTIVITY </h4>
+                      </div>
+                      <!-- title frame end -->
+                    </div>
+                    <!-- section title end -->
+
+                  </div>
+                  <!-- col end -->
+                   <!-- col -->
+<div class="col-lg-12">
+  <!-- slider container -->
+  <div class="swiper-container art-testimonial-slider" style="overflow: visible">
+    <!-- slider wrapper -->
+    <div class="swiper-wrapper">
+
+      <!-- slide -->
+      <div class="swiper-slide">
+        <!-- testimonial -->
+        <div class="art-a art-testimonial">
+          <!-- testimonial body -->
+          <div class="testimonial-body">
+            <!-- photo -->
+            <img class="art-testimonial-face" src="img/testimonials/Screenshot 2025-06-22 195025.png" alt="face">
+            <!-- name -->
+            <h5>Hackathon </h5>
+            <div class="art-el-suptitle mb-15">College Event</div>
+            <!-- text -->
+            <div class="mb-15">Participated in multiple hackathons organized by the college, developing innovative solutions under strict time limits. Strengthened my ability to solve real-world problems with teamwork and creative thinking.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- slide -->
+      <div class="swiper-slide">
+        <!-- testimonial -->
+        <div class="art-a art-testimonial">
+          <!-- testimonial body -->
+          <div class="testimonial-body">
+            <!-- photo -->
+            <img class="art-testimonial-face" src="img/testimonials/Screenshot 2025-06-22 195141.png" alt="face">
+            <!-- name -->
+            <h5>Workshops and skill</h5>
+            <div class="art-el-suptitle mb-15">MGR College & Others</div>
+            <!-- text -->
+            <div class="mb-15">Attended technical and non-technical workshops that enhanced both software development and communication skills. Always eager to learn new technologies and upgrade my technical knowledge.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- slide -->
+      <div class="swiper-slide">
+        <!-- testimonial -->
+        <div class="art-a art-testimonial">
+          <!-- testimonial body -->
+          <div class="testimonial-body">
+            <!-- photo -->
+            <img class="art-testimonial-face" src="img/testimonials/Screenshot 2025-06-22 195253.png" alt="face">
+            <!-- name -->
+            <h5>Coding Competitions</h5>
+            <div class="art-el-suptitle mb-15">Techfest at SRM Institute</div>
+            <!-- text -->
+            <div class="mb-15">Actively participated in coding contests, exploring new programming languages and tools. These competitions improved my problem-solving ability and exposed me to industry-level challenges.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- slide -->
+      <div class="swiper-slide">
+        <!-- testimonial -->
+        <div class="art-a art-testimonial">
+          <!-- testimonial body -->
+          <div class="testimonial-body">
+            <!-- photo -->
+            <img class="art-testimonial-face" src="img/testimonials/Screenshot 2025-06-22 195119.png" alt="face">
+            <!-- name -->
+            <h5>Hands-on Experience</h5>
+            <div class="art-el-suptitle mb-15">Real-World Projects</div>
+            <!-- text -->
+            <div class="mb-15">Worked on real-time applications like the NFT Marketplace and Renault Nissan project during my internship. Gained practical knowledge in web development, databases, and deployment processes.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- slider wrapper end -->
+  </div>
+  <!-- slider container end -->
+</div>
+<!-- col end -->
+
+
+                  
+                  <!-- col -->
+                  <div class="col-lg-12">
+
+                    <!-- slider navigation -->
+                    <div class="art-slider-navigation">
+
+                      <!-- left side -->
+                      <div class="art-sn-left">
+
+                        <!-- slider pagination -->
+                        <div class="swiper-pagination"></div>
+
+                      </div>
+                      <!-- left side end -->
+
+                      <!-- right side -->
+                      <div class="art-sn-right">
+
+                        <!-- slider navigation -->
+                        <div class="art-slider-nav-frame">
+                          <!-- prev -->
+                          <div class="art-slider-nav art-testi-swiper-prev"><i class="fas fa-chevron-left"></i></div>
+                          <!-- next -->
+                          <div class="art-slider-nav art-testi-swiper-next"><i class="fas fa-chevron-right"></i></div>
+                        </div>
+                        <!-- slider navigation -->
+
+                      </div>
+                      <!-- right side end -->
+
+                    </div>
+                    <!-- slider navigation end -->
+
+                  </div>
+                  <!-- col end -->
+
+                </div>
+                <!-- row end -->
+
+              </div>
+              <!-- container end -->
+
+              <!-- container -->
+              <div class="container-fluid">
+
+                <!-- row -->
+                <div class="row p-30-0">
+
+                  <!-- col -->
+                  <div class="col-lg-12">
+
+                    <!-- section title -->
+                    <div class="art-section-title">
+                      <!-- title frame -->
+                      <div class="art-title-frame">
+                        <!-- title -->
+                        <h2>PROJECTS</h2>
+                      </div>
+                      <!-- title frame end -->
+                      <!-- right frame -->
+                      <div class="art-right-frame">
+                        <!-- filter -->
+                        <div class="art-filter">
+                          <!-- filter link -->
+                          <a href="#" data-filter="*" class="art-link art-current">All Categories</a>
+                          <!-- filter link -->
+                          <a href="#" data-filter=".webTemplates" class="art-link">Full stack-Web develop</a>
+                          <!-- filter link -->
+                          <a href="#" data-filter=".logos" class="art-link">UI & UX Design</a>
+                          <!-- filter link -->
+                          <a href="#" data-filter=".drawings" class="art-link">Backend and Hosting</a>
+                          <!-- filter link -->
+                          <a href="#" data-filter=".ui" class="art-link">Database</a>
+                        </div>
+                        <!-- filter end -->
+                      </div>
+                      <!-- right frame end -->
+                    </div>
+                    <!-- section title end -->
+
+                  </div>
+                  <!-- col end -->
+
+                  <div class="art-grid art-grid-3-col art-gallery">
+
+                    <!-- grid item -->
+                    <div class="art-grid-item .webTemplates">
+                      <!-- grid item frame     -----------harizondal ,vertical, square to change a frame size------------------------------------------>
+                      <a data-fancybox="gallery" data-no-swup href="img/works/original-size/nft.jpg" class="art-a art-portfolio-item-frame art-vertical">
+                        <!-- img -->
+                        <img src="img/works/original-size/nft.jpg" alt="test image">
+
+                        <!-- zoom icon -->
+                        <span class="art-item-hover"><i class="fas fa-expand"></i></span>
+                      </a>
+                      <!-- grid item frame end -->
+                      <!-- description -->
+                      <div class="art-item-description">
+                        <!-- title -->
+                        <h5 class="mb-15">Nft Marketplace</h5>
+                        <!-- button -->
+                        <a href="#." class="art-link art-color-link art-w-chevron">Read more</a>
+                      </div>
+                      <!-- description end -->
+
+                    </div>
+                    <!-- grid item end -->
+
+                    <!-- grid item -->
+                    <div class="art-grid-item .webTemplates">
+                      <!-- grid item frame     -----------harizondal ,vertical, square to change a frame size------------------------------------------>
+                      <a data-fancybox="gallery" data-no-swup href="img/works/original-size/home.png" class="art-a art-portfolio-item-frame art-square">
+                        <!-- img -->
+                         
+                        <img src="img/works/original-size/html.png" alt="test image">
+                       
+                        <!-- zoom icon -->
+                        <span class="art-item-hover"><i class="fas fa-expand"></i></span>
+                      </a>
+                      <!-- grid item frame end -->
+                      <!-- description -->
+                      <div class="art-item-description">
+                        <!-- title -->
+                        <h5 class="mb-15">Salon website with admin panel</h5>
+                        <!-- button -->
+                        <a href="#." class="art-link art-color-link art-w-chevron">Read more</a>
+                      </div>
+                      <!-- description end -->
+
+                    </div>
+                    <!-- grid item end -->
+
+                    <!-- grid item -->
+                    <div class="art-grid-item .webTemplates">
+                      <!-- grid item frame     -----------harizondal ,vertical, square to change a frame size------------------------------------------>
+                      <a data-fancybox="gallery" data-no-swup href="img/works/original-size/port.png" class="art-a art-portfolio-item-frame art-horizontal">
+                        <!-- img -->
+                         
+                        <img src="img/works/original-size/port.png" alt="test image">
+                       
+                        <!-- zoom icon -->
+                        <span class="art-item-hover"><i class="fas fa-expand"></i></span>
+                      </a>
+                      <!-- grid item frame end -->
+                      <!-- description -->
+                      <div class="art-item-description">
+                        <!-- title -->
+                        <h5 class="mb-15">Protfolio website </h5>
+                        <!-- button -->
+                        <a href="#." class="art-link art-color-link art-w-chevron">Read more</a>
+                      </div>
+                      <!-- description end -->
+
+                    </div>
+                    <!-- grid item end -->
+
+
+                   
+
+                  </div>
+
+                </div>
+                <!-- row end -->
+
+              </div>
+              <!-- container end -->
+
+              <!-- container -->
+<div class="container-fluid">
+  <!-- row -->
+  <div class="row">
+    <!-- col -->
+    <div class="col-lg-6">
+      <!-- section title -->
+      <div class="art-section-title">
+        <div class="art-title-frame">
+          <h4>Education</h4>
+        </div>
+      </div>
+
+      <!-- timeline -->
+      <div class="art-timeline art-gallery" id="history">
+
+        <!-- 10th -->
+        <div class="art-timeline-item">
+          <div class="art-timeline-mark-light"></div>
+          <div class="art-timeline-mark"></div>
+          <div class="art-a art-timeline-content">
+            <div class="art-card-header">
+              <div class="art-left-side">
+                <h5>10th Standard </h5>
+                <div class="art-el-suptitle mb-15">Matriculation School, Tamil Nadu</div>
+              </div>
+              <div class="art-right-side">
+                <span class="art-date">June 2017 – March 2018</span>
+              </div>
+            </div>
+            <p>Successfully completed 10th Matriculation under Tamil Nadu syllabus with strong academic performance in core subjects including Science and Mathematics.</p>
+            <a data-fancybox="diplome" data-no-swup href="files/10th-marksheet.jpg" class="art-link art-color-link art-w-chevron">Marksheet</a>
+          </div>
+        </div>
+
+        <!-- 11th -->
+        <div class="art-timeline-item">
+          <div class="art-timeline-mark-light"></div>
+          <div class="art-timeline-mark"></div>
+          <div class="art-a art-timeline-content">
+            <div class="art-card-header">
+              <div class="art-left-side">
+                <h5>11th Standard</h5>
+                <div class="art-el-suptitle mb-15">Matriculation Higher Secondary School</div>
+              </div>
+              <div class="art-right-side">
+                <span class="art-date">June 2018 – March 2019</span>
+              </div>
+            </div>
+            <div>Focused on core subjects like Computer Science, Mathematics, and Physics which laid the foundation for engineering studies.</div>
+          </div>
+        </div>
+
+        <!-- 12th -->
+        <div class="art-timeline-item">
+          <div class="art-timeline-mark-light"></div>
+          <div class="art-timeline-mark"></div>
+          <div class="art-a art-timeline-content">
+            <div class="art-card-header">
+              <div class="art-left-side">
+                <h5>12th Standard</h5>
+                <div class="art-el-suptitle mb-15">Matriculation Higher Secondary School</div>
+              </div>
+              <div class="art-right-side">
+                <span class="art-date">June 2019 – March 2020</span>
+              </div>
+            </div>
+            <p>Completed 12th standard with Computer Science group, scoring well in the final exams. Developed strong interest in programming and software development.</p>
+            <a data-fancybox="diplome" data-no-swup href="files/12th-marksheet.jpg" class="art-link art-color-link art-w-chevron">Marksheet</a>
+          </div>
+        </div>
+
+        <!-- UG -->
+        <div class="art-timeline-item">
+          <div class="art-timeline-mark-light"></div>
+          <div class="art-timeline-mark"></div>
+          <div class="art-a art-timeline-content">
+            <div class="art-card-header">
+              <div class="art-left-side">
+                <h5>B.Tech – Information Technology</h5>
+                <div class="art-el-suptitle mb-15">Vels University, Pallavaram</div>
+              </div>
+              <div class="art-right-side">
+                <span class="art-date">2022 – 2026</span>
+              </div>
+            </div>
+            <p>Currently pursuing B.Tech in Information Technology. Gained strong skills in full-stack development, cloud technologies, and databases. Current CGPA: 7.2</p>
+            <a data-fancybox="diplome" data-no-swup href="files/btech-certificate.jpg" class="art-link art-color-link art-w-chevron">Certificate</a>
+          </div>
+        </div>
+
+        
+
+      </div>
+      <!-- timeline end -->
+    </div>
+    <!-- col end -->
+
+
+              
+                <div class="col-lg-6">
+  <!-- section title -->
+  <div class="art-section-title">
+    <div class="art-title-frame">
+      <h4>Work History</h4>
+    </div>
+  </div>
+  <!-- section title end -->
+
+  <!-- timeline -->
+  <div class="art-timeline">
+
+    <div class="art-timeline-item">
+      <div class="art-timeline-mark-light"></div>
+      <div class="art-timeline-mark"></div>
+
+      <div class="art-a art-timeline-content">
+        <div class="art-card-header">
+          <div class="art-left-side">
+            <h5>Elintsys Technologies India Pvt Ltd</h5>
+            <div class="art-el-suptitle mb-15">Intern – Full Stack Developer</div>
+          </div>
+          <div class="art-right-side">
+            <span class="art-date">Dec 2023 – Feb 2024</span>
+          </div>
+        </div>
+        <p>Worked on full-stack development for the Renault Nissan client. Contributed to the AutoSpec Exterior Detection project, utilizing technologies like React.js, Java Spring Boot, and MySQL. Gained real-world experience in Firebase integration, AI & ML, and hardware networking.</p>
+        <a data-fancybox="recommendation" data-no-swup href="#art-recomendation-popup-1" class="art-link art-color-link art-w-chevron">Recommendation</a>
+      </div>
+
+      <!-- popup -->
+      <div class="art-recomendation-popup" style="display: none;" id="art-recomendation-popup-1">
+        <!-- testimonial -->
+        <div class="art-a art-testimonial">
+          <!-- testimonial body -->
+          <div class="testimonial-body">
+            <!-- photo -->
+            <img class="art-testimonial-face" src="img/testimonials/face-3.jpg" alt="face">
+            <!-- name -->
+            <h5>Project Mentor / Team Lead</h5>
+            <div class="art-el-suptitle mb-15">Elintsys Technologies</div>
+            <!-- text -->
+            <div class="mb-15">Manoj quickly adapted to our development environment and delivered quality modules during the internship. He showed strong skills in full-stack development and worked efficiently on real client requirements with React, Spring Boot, and Firebase. A committed and quick learner.</div>
+          </div>
+        </div>
+        <!-- testimonial end -->
+      </div>
+      <!-- popup end -->
+    </div>
+
+    <div class="art-timeline-item">
+      <div class="art-timeline-mark-light"></div>
+      <div class="art-timeline-mark"></div>
+
+      <div class="art-a art-timeline-content">
+        <div class="art-card-header">
+          <div class="art-left-side">
+            <h5>Elintsys Technologies India Pvt Ltd</h5>
+            <div class="art-el-suptitle mb-15">Intern – Full Stack Developer</div>
+          </div>
+          <div class="art-right-side">
+            <span class="art-date">Dec 2023 – Feb 2024</span>
+          </div>
+        </div>
+        <p>Worked on full-stack development for the Renault Nissan client. Contributed to the AutoSpec Exterior Detection project, utilizing technologies like React.js, Java Spring Boot, and MySQL. Gained real-world experience in Firebase integration, AI & ML, and hardware networking.</p>
+        <a data-fancybox="recommendation" data-no-swup href="#art-recomendation-popup-1" class="art-link art-color-link art-w-chevron">Recommendation</a>
+      </div>
+
+      <!-- popup -->
+      <div class="art-recomendation-popup" style="display: none;" id="art-recomendation-popup-1">
+        <!-- testimonial -->
+        <div class="art-a art-testimonial">
+          <!-- testimonial body -->
+          <div class="testimonial-body">
+            <!-- photo -->
+            <img class="art-testimonial-face" src="img/testimonials/face-3.jpg" alt="face">
+            <!-- name -->
+            <h5>Project Mentor / Team Lead</h5>
+            <div class="art-el-suptitle mb-15">Elintsys Technologies</div>
+            <!-- text -->
+            <div class="mb-15">Manoj quickly adapted to our development environment and delivered quality modules during the internship. He showed strong skills in full-stack development and worked efficiently on real client requirements with React, Spring Boot, and Firebase. A committed and quick learner.</div>
+          </div>
+        </div>
+        <!-- testimonial end -->
+      </div>
+      <!-- popup end -->
+    </div>
+  </div>
+
+  <!-- timeline end -->
+</div>
+
+
+<hr style="height: 2px; background-color: rgb(252, 0, 0); border: none; margin: 20px 0;">
+
+
+
+
+
+
+
+                  <!-- col end ------------------------------------------------------------------->
+
+<!-- container -->
+<div class="container-fluid">
+  <div class="row">
+
+    <div class="col-lg-12">
+      <div class="art-section-title">
+        <div class="art-title-frame">
+          <h3>Certificate</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-12">
+      <div class="swiper-container art-blog-slider" style="overflow: visible">
+       <div class="swiper-wrapper">
+
+  <!-- Slide 10 - Java -->
+  <div class="swiper-slide">
+    <div class="art-a art-blog-card">
+      <a href="#popup10" data-fancybox class="art-port-cover">
+        <img src="img/blog/java.png" alt="Java">
+      </a>
+      <div class="art-post-description">
+        <a href="#popup10" data-fancybox><h5 class="mb-15">Java Certification</h5></a>
+        <div class="mb-15">Completed core Java course with strong foundation in OOP.</div>
+        <a href="#popup10" data-fancybox class="art-link art-color-link art-w-chevron">Read more</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 9 - RDBMS -->
+  <div class="swiper-slide">
+    <div class="art-a art-blog-card">
+      <a href="#popup9" data-fancybox class="art-port-cover">
+        <img src="img/blog/rdbms.png" alt="RDBMS">
+      </a>
+      <div class="art-post-description">
+        <a href="#popup9" data-fancybox><h5 class="mb-15">RDBMS Course – IBM</h5></a>
+        <div class="mb-15">Mastered table creation, SQL joins, normalization, and DB design.</div>
+        <a href="#popup9" data-fancybox class="art-link art-color-link art-w-chevron">Read more</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 8 - C++ -->
+  <div class="swiper-slide">
+    <div class="art-a art-blog-card">
+      <a href="#popup8" data-fancybox class="art-port-cover">
+        <img src="img/blog/c+.png" alt="C++">
+      </a>
+      <div class="art-post-description">
+        <a href="#popup8" data-fancybox><h5 class="mb-15">C++ Programming – IBM</h5></a>
+        <div class="mb-15">Learned OOP concepts, reusable code, and real-world debugging.</div>
+        <a href="#popup8" data-fancybox class="art-link art-color-link art-w-chevron">Read more</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 7 - C -->
+  <div class="swiper-slide">
+    <div class="art-a art-blog-card">
+      <a href="#popup7" data-fancybox class="art-port-cover">
+        <img src="img/blog/c.png" alt="C Language">
+      </a>
+      <div class="art-post-description">
+        <a href="#popup7" data-fancybox><h5 class="mb-15">C Programming – IBM</h5></a>
+        <div class="mb-15">Covered variables, loops, arrays, and pointers in depth.</div>
+        <a href="#popup7" data-fancybox class="art-link art-color-link art-w-chevron">Read more</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 6 - Blockchain -->
+  <div class="swiper-slide">
+    <div class="art-a art-blog-card">
+      <a href="#popup6" data-fancybox class="art-port-cover">
+        <img src="img/blog/block.png" alt="Blockchain">
+      </a>
+      <div class="art-post-description">
+        <a href="#popup6" data-fancybox><h5 class="mb-15">Blockchain Course – IBM</h5></a>
+        <div class="mb-15">Learned smart contracts, Ethereum, Hyperledger, and use cases.</div>
+        <a href="#popup6" data-fancybox class="art-link art-color-link art-w-chevron">Read more</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 5 - SQL -->
+  <div class="swiper-slide">
+    <div class="art-a art-blog-card">
+      <a href="#popup5" data-fancybox class="art-port-cover">
+        <img src="img/blog/sql.png" alt="SQL Python">
+      </a>
+      <div class="art-post-description">
+        <a href="#popup5" data-fancybox><h5 class="mb-15">SQL with Python – Mind Luster</h5></a>
+        <div class="mb-15">Learned CRUD, data analysis, and SQL-Python integration.</div>
+        <a href="#popup5" data-fancybox class="art-link art-color-link art-w-chevron">Read more</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 4 - Hackathon -->
+  <div class="swiper-slide">
+    <div class="art-a art-blog-card">
+      <a href="#popup4" data-fancybox class="art-port-cover">
+        <img src="img/blog/hack.jpg" alt="Hackathon">
+      </a>
+      <div class="art-post-description">
+        <a href="#popup4" data-fancybox><h5 class="mb-15">Hackathon – Techastra’24</h5></a>
+        <div class="mb-15">Participated in DIM.GR Hackathon. Great learning & teamwork!</div>
+        <a href="#popup4" data-fancybox class="art-link art-color-link art-w-chevron">Read more</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 3 - Cybersecurity -->
+  <div class="swiper-slide">
+    <div class="art-a art-blog-card">
+      <a href="#popup3" data-fancybox class="art-port-cover">
+        <img src="img/blog/cb.jpg" alt="Cybersecurity">
+      </a>
+      <div class="art-post-description">
+        <a href="#popup3" data-fancybox><h5 class="mb-15">Cybersecurity Associate – Futurecalls</h5></a>
+        <div class="mb-15">Earned Level 1 certification. Strong cybersecurity foundation gained.</div>
+        <a href="#popup3" data-fancybox class="art-link art-color-link art-w-chevron">Read more</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 2 - Game Dev -->
+  <div class="swiper-slide">
+    <div class="art-a art-blog-card">
+      <a href="#popup2" data-fancybox class="art-port-cover">
+        <img src="img/blog/game.jpg" alt="Game Dev">
+      </a>
+      <div class="art-post-description">
+        <a href="#popup2" data-fancybox><h5 class="mb-15">Game Development at Vels</h5></a>
+        <div class="mb-15">Completed game development course by InLustro. Exploring Unity!</div>
+        <a href="#popup2" data-fancybox class="art-link art-color-link art-w-chevron">Read more</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 1 - Precise Energy -->
+  <div class="swiper-slide">
+    <div class="art-a art-blog-card">
+      <a href="#popup1" data-fancybox class="art-port-cover">
+        <img src="img/blog/energy.jpg" alt="Olympiad">
+      </a>
+      <div class="art-post-description">
+        <a href="#popup1" data-fancybox><h5 class="mb-15">Precise Energy Olympiad</h5></a>
+        <div class="mb-15">Represented VISTAS in STEM Olympiad for Physics, Math & Chemistry.</div>
+        <a href="#popup1" data-fancybox class="art-link art-color-link art-w-chevron">Read more</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- POPUPS -->
+<div style="display: none;">
+
+  <!-- Olympiad -->
+  <div id="popup1" class="art-popup">
+    <h4>Precise Energy Olympiad</h4>
+    <p>I had the opportunity to participate in the “Precise Energy” Olympiad organized for students in the Kudankulam NPP region, covering core STEM subjects like Mathematics, Chemistry, and Physics. Representing VISTAS (B.Tech IT) at the preliminary stage was a proud moment. The event was a great platform to assess my skills in science and deepen my passion for problem-solving and innovation.</p>
+    <p>It helped me realize how energy science and technology are closely interconnected. Looking forward to more such opportunities to grow and contribute to the world of science and tech!</p>
+  </div>
+
+  <!-- Game Development -->
+  <div id="popup2" class="art-popup">
+    <h4>Game Development – InLustro</h4>
+    <p>I completed a Game Development course organized by InLustro at Vels University. The course covered game design, development logic, user interaction, and graphics rendering. I gained practical experience using game engines and explored what makes games engaging and playable.</p>
+    <p>Currently, I am diving into Unity and 2D/3D game environments. I plan to create interactive gaming experiences in the future combining creativity and logic. Grateful to InLustro for this opportunity!</p>
+  </div>
+
+  <!-- Cybersecurity -->
+  <div id="popup3" class="art-popup">
+    <h4>Cybersecurity Associate – Futurecalls</h4>
+    <p>Successfully completed the Cyber Security Associate Level 1 certification from Futurecalls. The course covered essential cybersecurity concepts including types of threats, firewalls, secure authentication, and data protection mechanisms.</p>
+    <p>This certification strengthened my understanding of securing systems and applications, and I am excited to explore ethical hacking and security engineering further as part of my tech journey.</p>
+  </div>
+
+  <!-- Hackathon -->
+  <div id="popup4" class="art-popup">
+    <h4>Hackathon – Techastra’24</h4>
+    <p>I participated in the Techastra'24 Hackathon at DIM.GR University, where we were challenged to solve real-world problems through coding and design thinking. It was a thrilling experience to work as a team, ideate under pressure, and build a prototype within the limited time.</p>
+    <p>This event boosted my confidence in collaboration, problem-solving, and rapid development. I look forward to participating in more hackathons in the future!</p>
+  </div>
+
+  <!-- SQL with Python -->
+  <div id="popup5" class="art-popup">
+    <h4>SQL with Python – Mind Luster</h4>
+    <p>In this course, I learned how to connect Python applications with SQL databases. It included writing and executing SQL queries through Python, performing CRUD operations, and managing structured data using real-time use cases.</p>
+    <p>These skills are essential for data-driven applications, and I’m now comfortable creating database-powered Python programs. Thanks to Mind Luster for this insightful course!</p>
+  </div>
+
+  <!-- Blockchain -->
+  <div id="popup6" class="art-popup">
+    <h4>Blockchain Course – IBM</h4>
+    <p>This course introduced me to blockchain fundamentals, decentralization, smart contracts, and their applications in real-life industries such as finance and supply chain. I explored Ethereum, Hyperledger, and how distributed ledgers function.</p>
+    <p>It helped me understand why blockchain is such a revolutionary technology. I aim to integrate blockchain in future projects like secure data storage and digital ownership platforms.</p>
+  </div>
+
+  <!-- C Programming -->
+  <div id="popup7" class="art-popup">
+    <h4>C Programming – IBM</h4>
+    <p>This foundational course helped me master the basics of C programming including syntax, variables, control structures, arrays, and memory management using pointers. It also emphasized writing clean, logical code and debugging.</p>
+    <p>C is the backbone of programming and learning it strengthened my overall confidence in coding. I now write modular programs and can efficiently solve algorithmic problems using C.</p>
+  </div>
+
+  <!-- C++ Programming -->
+  <div id="popup8" class="art-popup">
+    <h4>C++ Programming – IBM</h4>
+    <p>This course covered object-oriented programming concepts like classes, inheritance, polymorphism, and encapsulation. I gained experience in structuring large-scale applications and building reusable components.</p>
+    <p>The skills gained in C++ helped me understand the transition from procedural to object-oriented thinking, which is crucial for backend and system-level development.</p>
+  </div>
+
+  <!-- RDBMS -->
+  <div id="popup9" class="art-popup">
+    <h4>RDBMS Course – IBM</h4>
+    <p>This course focused on Relational Database Management Systems, including table design, primary/foreign keys, normalization, and SQL queries. I learned how databases power modern web applications and how to maintain data integrity.</p>
+    <p>It was a comprehensive course that laid a solid foundation for using databases in real-world projects.</p>
+  </div>
+
+  <!-- Java -->
+  <div id="popup10" class="art-popup">
+    <h4>Java Certification</h4>
+    <p>Successfully completed a core Java course where I mastered concepts such as classes, objects, inheritance, polymorphism, exception handling, and file I/O. The course helped me write clean and scalable Java code.</p>
+    <p>I plan to continue learning Spring Boot and Java frameworks for full-stack development and backend services.</p>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- Internship Showcase Section -->
+<section class="internship-showcase">
+  <div class="container" style="background-color:#292931b0; padding: 20px; border-radius: 10px;">
+
+    <div class="internship-content">
+      <!-- Image Section -->
+      <div class="internship-image"style="margin-top: 20px;">
+        <img src="img/elin1.jpg" alt="Internship Photo">
+      </div>
+
+      <!-- Text Section -->
+      <div class="internship-details">
+        <h3>Internship Experience</h3>
+        <h5>Elintsys Technologies (6 Months)</h5>
+        <p>
+          Worked as a Full Stack Developer Intern. Contributed to client projects, including Nissan Renault, using modern tools and technologies.
+        </p>
+        <ul>
+          <li>● Frontend with React.js</li>
+          <li>● Backend using Spring Boot (Java)</li>
+          <li>● Database: MySQL </li>
+          <li>● Used a Hardware Networking and AI & ML </li>
+        </ul>
+        <a href="#!" class="internship-btn" onclick="openModal()">View Certificate</a>
+
+
+        
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Popup Modal for Certificates -->
+<div id="certificateModal" class="modal-overlay">
+  <div class="modal-box">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h3>Internship Documents</h3>
+    <div class="certificates">
+      <div class="doc-box">
+        <h4>Offer Letter</h4>
+        <img src="img/offer.jpg" alt="Offer Letter" class="doc-img">
+      </div>
+      <div class="doc-box">
+        <h4>Certificate</h4>
+        <img src="img/inter.jpg" alt="Internship Certificate" class="doc-img">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div style="display: flex; justify-content: center; margin-top: 40px;">
+
+  
+
+
+
+
+
+
+
+
+
+
+                </div>
+                <!-- row end -->
+
+              </div>
+              <!-- container end -->
+
+              <!-- container -->
+              <div class="container-fluid">
+
+                <!-- row -->
+                <div class="row p-30-0">
+
+                  <!-- col -->
+                  <div class="col-lg-12">
+
+                    <!-- section title -->
+                    <div class="art-section-title">
+                      <!-- title frame -->
+                      <div class="art-title-frame">
+                        <!-- title -->
+                        <h4>Contact information</h4>
+                      </div>
+                      <!-- title frame end -->
+                    </div>
+                    <!-- section title end -->
+
+                  </div>
+                  <!-- col end -->
+                  <!-- col -->
+                  <div class="col-lg-4">
+                    <!-- contact card -->
+                    <div class="art-a art-card">
+                      <div class="art-table p-15-15">
+                        <ul>
+                          <li>
+                            <h6>Country:</h6><span>India</span>
+                          </li>
+                          <li>
+                            <h6>State:</h6><span>Tamil Nadu</span>
+                          </li>
+
+                          <li>
+                            <h6>City:</h6><span>Chennai</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- contact card end -->
+                  </div>
+                  <!-- col end -->
+                  <!-- col -->
+                  <div class="col-lg-4">
+                    <!-- contact card -->
+                    <div class="art-a art-card">
+                      <div class="art-table p-15-15">
+                        <ul>
+                          <li>
+                            <h6>Email:</h6><span>manoj.v2005vgmgmail.com</span>
+                          </li>
+                          <li>
+                            <h6>lindedin:</h6><span>www.linkedin.com/in/manoj-v24</span>
+                          </li>
+                          <li>
+                            <h6>Instagram</h6><span>Arter</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- contact card end -->
+                  </div>
+                  <!-- col end -->
+                  <!-- col -->
+                  <div class="col-lg-4">
+                    <!-- contact card -->
+                    <div class="art-a art-card">
+                      <div class="art-table p-15-15">
+                        <ul>
+                          <li>
+                            <h6>whats App:</h6><span>+91 9361154514</span>
+                          </li>
+                    
+                          <li>
+                            <h6>Personal:</h6><span>+91 9361154514</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- contact card end -->
+
+                  </div>
+                  <!-- col end -->
+
+                  <!-- col -->
+                  <div class="col-lg-12">
+
+                    <!-- section title -->
+                    <div class="art-section-title">
+                      <!-- title frame -->
+                      <div class="art-title-frame">
+                        <!-- title -->
+                        <h4>Get in touch</h4>
+                      </div>
+                      <!-- title frame end -->
+                    </div>
+                    <!-- section title end -->
+
+                    <!-- contact form frame -->
+                    <div class="art-a art-card">
+
+                      <!-- contact form -->
+
+
+  <!-- contact form using Formspree -->
+  <form action="https://formspree.io/f/mzzgjzja" method="POST" class="art-contact-form">
+    
+    <!-- form field -->
+    <div class="art-form-field">
+      <input name="name" class="art-input" type="text" placeholder="Name" required>
+      <label><i class="fas fa-user"></i></label>
+    </div>
+
+    <div class="art-form-field">
+      <input name="email" class="art-input" type="email" placeholder="Email" required>
+      <label><i class="fas fa-at"></i></label>
+    </div>
+
+    <div class="art-form-field">
+      <textarea name="message" class="art-input" placeholder="Message" required></textarea>
+      <label><i class="far fa-envelope"></i></label>
+    </div>
+
+    <!-- button -->
+    <div class="art-submit-frame">
+      <button class="art-btn art-btn-md art-submit" type="submit"><span>Send message</span></button>
+      <!-- optional static success text -->
+      <div class="art-success" style="display:none;">Success <i class="fas fa-check"></i></div>
+    </div>
+
+  </form>
+
+
+
+  
+                    <!-- contact form frame end -->
+
+                  </div>
+                  <!-- col end -->
+
+                </div>
+                <!-- row end -->
+
+              </div>
+              <!-- container end -->
+
+              <!-- container -->
+              
+
+              <!-- container -->
+              <div class="container-fluid">
+
+                <!-- footer -->
+                <footer>
+                  <!-- copyright -->
+                  <div class="art-copy">© 2023 Manoj v</div>
+                  <!-- author ( Please! Do not delete it. You are awesome! :) -->
+                  <div>Website author:&#160; <a href="https://themeforest.net/user/millerdigitaldesign" target="_blank" data-no-swup>Manoj v</a></div>
+                </footer>
+                <!-- footer end -->
+
+              </div>
+              <!-- container end -->
+
+            </div>
+            <!-- scroll frame end -->
+
+          </div>
+          <!-- swup container end -->
+
+        </div>
+        <!-- content end -->
+
+      </div>
+      <!-- app container end -->
+
+    </div>
+    <!-- app wrapper end -->
+
+    <!-- preloader -->
+    <div class="art-preloader">
+      <!-- preloader content -->
+      <div class="art-preloader-content">
+        <!-- title -->
+        <h4>Manoj v</h4>
+        <!-- progressbar -->
+        <div id="preloader" class="art-preloader-load"></div>
+      </div>
+      <!-- preloader content end -->
+    </div>
+    <!-- preloader end -->
+
+  </div>
+  <!-- app end -->
+  <div id="swupMenu"></div>
+
+  <!-- jquery js -->
+  <script src="js/plugins/jquery.min.js"></script>
+  <!-- anime js -->
+  <script src="js/plugins/anime.min.js"></script>
+  <!-- swiper js -->
+  <script src="js/plugins/swiper.min.js"></script>
+  <!-- progressbar js -->
+  <script src="js/plugins/progressbar.min.js"></script>
+  <!-- smooth scrollbar js -->
+  <script src="js/plugins/smooth-scrollbar.min.js"></script>
+  <!-- overscroll js -->
+  <script src="js/plugins/overscroll.min.js"></script>
+  <!-- typing js -->
+  <script src="js/plugins/typing.min.js"></script>
+  <!-- isotope js -->
+  <script src="js/plugins/isotope.min.js"></script>
+  <!-- fancybox js -->
+  <script src="js/plugins/fancybox.min.js"></script>
+  <!-- swup js -->
+  <script src="js/plugins/swup.min.js"></script>
+
+  <!-- main js -->
+  <script src="js/main.js"></script>
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script>
+  function openModal() {
+    document.getElementById("certificateModal").style.display = "block";
+  }
+
+  function closeModal() {
+    document.getElementById("certificateModal").style.display = "none";
+  }
+
+  window.onclick = function(event) {
+    const modal = document.getElementById("certificateModal");
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+
+</body>
+
+
+<!-- Mirrored from miller.bslthemes.com/arter-demo/onepage.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Feb 2025 05:46:51 GMT -->
+</html>
